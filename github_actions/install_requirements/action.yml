@@ -8,10 +8,14 @@ runs:
         name: "pragma > install_requirements"
   
     # For Cycles
+    #- name: Install Cuda
+    #  uses: Jimver/cuda-toolkit@v0.2.8
+    #  with:
+    #    cuda: '11.7.0'
     - name: Install Cuda
       uses: Jimver/cuda-toolkit@v0.2.8
       with:
-        cuda: '11.7.0'
+        cuda: '10.2.89'
     # TODO: Install OptiX
   
     - name: Maximize build space
