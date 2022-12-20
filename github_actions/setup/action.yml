@@ -13,6 +13,6 @@ runs:
     - name: Download Pragma
       shell: bash
       run: |
-        git clone https://github.com/Silverlan/pragma.git --recurse-submodules
+        git clone https://github.com/Silverlan/tmp_pragma_ci.git pragma --recurse-submodules
   
     - uses: Silverlan/common_actions/action_end@main
