@@ -22,7 +22,7 @@ runs:
   using: "composite"
   steps:
     - name: Setup Pragma
-      uses: Silverlan/pragma/github_actions/setup@master
+      uses: Silverlan/tmp_pragma_ci/github_actions/setup@master
 
     - name: "Download Module"
       uses: actions/checkout@v3
@@ -32,7 +32,7 @@ runs:
 
     - name: Build Pragma
       id: build-pragma
-      uses: Silverlan/pragma/github_actions/build@master
+      uses: Silverlan/tmp_pragma_ci/github_actions/build@master
       with:
         build-args: '--with-common-modules=0 --with-essential-client-modules=0 --module ${{ inputs.module }}'
 
