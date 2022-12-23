@@ -1,4 +1,6 @@
 [![Build Windows](https://github.com/Silverlan/pragma/actions/workflows/pragma-windows-ci.yml/badge.svg?branch=master)](https://github.com/Silverlan/pragma/actions/workflows/pragma-windows-ci.yml) [![Build Linux](https://github.com/Silverlan/pragma/actions/workflows/pragma-linux-ci.yml/badge.svg?branch=master)](https://github.com/Silverlan/pragma/actions/workflows/pragma-linux-ci.yml)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Silverlan/tmp_pragma_ci/blob/master/README.md)
+[![jp](https://img.shields.io/badge/lang-jp-red.svg)](https://github.com/Silverlan/tmp_pragma_ci/blob/master/README.jp.md)
 
 <img align="right" width="150" height="150" alt="Pragma Logo" title="Pragma Logo" src="https://wiki.pragma-engine.com/uploads/images/gallery/2022-09/scaled-1680-/pragma-logo-256.png">
 
