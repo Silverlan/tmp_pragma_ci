@@ -1,4 +1,4 @@
-[![Build Windows](https://github.com/Silverlan/pragma/actions/workflows/pragma-windows-ci.yml/badge.svg?branch=master)](https://github.com/Silverlan/pragma/actions/workflows/pragma-windows-ci.yml) [![Build Linux](https://github.com/Silverlan/pragma/actions/workflows/pragma-linux-ci.yml/badge.svg?branch=master)](https://github.com/Silverlan/pragma/actions/workflows/pragma-linux-ci.yml)
+[![Build Windows](https://github.com/Silverlan/pragma/actions/workflows/pragma-windows-ci.yml/badge.svg?branch=master)](https://github.com/Silverlan/pragma/actions/workflows/pragma-windows-ci.yml) [![Build Linux](https://github.com/Silverlan/pragma/actions/workflows/pragma-linux-ci.yml/badge.svg?branch=master)](https://github.com/Silverlan/pragma/actions/workflows/pragma-linux-ci.yml)<br/>
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Silverlan/tmp_pragma_ci/blob/master/README.md)
 [![jp](https://img.shields.io/badge/lang-jp-red.svg)](https://github.com/Silverlan/tmp_pragma_ci/blob/master/README.jp.md)
 
