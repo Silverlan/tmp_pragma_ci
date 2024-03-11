@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   build:
-    name: Build - ${{ matrix.config.os }} - ${{ matrix.config.compiler }}
+    name: Build - ${{ matrix.config.os }} - ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
     strategy:
       fail-fast: false
