@@ -38,6 +38,12 @@ jobs:
             c_compiler: "clang-17"
             cxx_compiler: "clang++-17"
     steps:
+      - name: Workflow Setup
+        shell: bash
+        run: |
+          sudo apt-get install ${{ matrix.config.c_compiler }}
+          sudo apt-get install ${{ matrix.config.cxx_compiler }}
+
       - name: Setup Pragma
         uses: Silverlan/pragma/github_actions/setup@master
         with:
