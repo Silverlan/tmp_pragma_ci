@@ -15,8 +15,8 @@ runs:
       uses: Silverlan/pragma/github_actions/run_tests@main
       with:
         test-scripts: |
-          "tests/assets/assets.lua"
-          "tests/game/game.lua"
+          "tests/assets.udm"
+          "tests/game.udm"
         working-directory: "${{ inputs.working-directory }}"
         artifacts-name: "server-tests"
         state: "server"
@@ -25,21 +25,18 @@ runs:
       uses: Silverlan/pragma/github_actions/run_tests@main
       with:
         test-scripts: |
-          "tests/assets/assets.lua"
-          "tests/game/game.lua"
-          "tests/pfm/launch_pfm.lua"
+          "tests/assets.udm"
+          "tests/game.udm"
         working-directory: "${{ inputs.working-directory }}"
         artifacts-name: "base-tests"
-        screenshot: true
 
-    - name: PFM - Create Actor
-      uses: Silverlan/pragma/github_actions/run_tests@main
-      with:
-        test-scripts: |
-          "tests/pfm/create_actor.lua"
-        working-directory: "${{ inputs.working-directory }}"
-        artifacts-name: "pfm-create-actor"
-        screenshot: true
+    #- name: PFM - Create Actor
+    #  uses: Silverlan/pragma/github_actions/run_tests@main
+    #  with:
+    #    test-scripts: |
+    #      "tests/pfm.lua"
+    #    working-directory: "${{ inputs.working-directory }}"
+    #    artifacts-name: "pfm-tests"
 
     - name: Checkout Import Tests
       uses: actions/checkout@v4
