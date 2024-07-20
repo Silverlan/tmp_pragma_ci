@@ -1,8 +1,6 @@
 name: Check Windows Build
 on:
   push:
-    branches-ignore:
-      - main
 
 concurrency:
   group: check-build-win-${{ github.ref }}

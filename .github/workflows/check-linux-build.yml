@@ -1,8 +1,6 @@
 name: Check Linux Build
 on:
   push:
-    branches-ignore:
-      - main
 
 concurrency:
   group: check-build-lin-${{ github.ref }}
