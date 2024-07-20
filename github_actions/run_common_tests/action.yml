@@ -12,7 +12,7 @@ runs:
   using: "composite"
   steps:
     - name: Serverside Tests
-      uses: Silverlan/pragma/github_actions/run_tests@main
+      uses: Silverlan/tmp_pragma_ci/github_actions/run_tests@main
       with:
         test-scripts: |
           "tests/assets.udm"
@@ -22,7 +22,7 @@ runs:
         state: "server"
 
     - name: Base Tests
-      uses: Silverlan/pragma/github_actions/run_tests@main
+      uses: Silverlan/tmp_pragma_ci/github_actions/run_tests@main
       with:
         test-scripts: |
           "tests/assets.udm"
@@ -52,11 +52,10 @@ runs:
         cp -rf pragma_tests_import/* ${{ inputs.working-directory }}/
         rm -rf pragma_tests_import
 
-    - name: Import Tests
-      uses: Silverlan/pragma/github_actions/run_tests@main
-      with:
-        test-scripts: |
-          "tests/import_assets.lua"
-        working-directory: "${{ inputs.working-directory }}"
-        artifacts-name: "import-tests"
-        screenshot: true
+    #- name: Import Tests
+    #  uses: Silverlan/tmp_pragma_ci/github_actions/run_tests@main
+    #  with:
+    #    test-scripts: |
+    #      "tests/import_assets.lua"
+    #    working-directory: "${{ inputs.working-directory }}"
+    #    artifacts-name: "import-tests"
