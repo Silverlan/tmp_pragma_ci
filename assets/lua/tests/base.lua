@@ -72,6 +72,7 @@ function tests.TestManager:CompleteTest(success, resultData)
 			local path = "temp/tests/" .. curTest
 			file.create_path(path)
 			local dstFileName = path .. "/" .. file.get_file_name(fileName)
+			file.copy("log.txt",path .. "/log.txt")
 			local success = file.move(fileName, dstFileName)
 			if success == false then
 				LOGGER:Warn("Failed to copy test asset file '{}' to '{}'!", fileName, dstFileName)
@@ -160,7 +161,8 @@ tests.run = function()
 	tests.manager:Start()
 end
 tests.complete = function(success, resultData)
-	if resultData ~= nil and resultData.screenshot then
+	resultData = resultData or {}
+	if resultData.screenshot then
 		LOGGER:Info("Taking screenshot...")
 		resultData["assets"] = resultData["assets"] or {}
 		-- Wait a few frames before taking the screenshot

@@ -26,7 +26,7 @@ jobs:
         echo ("WORKFLOW_STATUS=success") >> $env:GITHUB_ENV
 
     - name: Run Tests
-      uses: Silverlan/pragma/github_actions/run_common_tests@main
+      uses: Silverlan/tmp_pragma_ci/github_actions/run_common_tests@main
       with:
         import-tests-token: ${{ secrets.PRAGMA_TESTS_IMPORT_TOKEN }}
 
