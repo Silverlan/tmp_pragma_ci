@@ -35,7 +35,7 @@ runs:
 
     - name: Run Tests
       id: pragma
-      uses: Silverlan/pragma/github_actions/run_lua@main
+      uses: Silverlan/tmp_pragma_ci/github_actions/run_lua@main
       with:
         state: "${{ inputs.state }}"
         version: "${{ inputs.version }}"
