@@ -45,8 +45,8 @@ void DebugConsole::open()
 		spdlog::info("Application is console sub-system. Attaching process to existing console...");
 		AttachConsole(GetCurrentProcessId());
 	}
-	SetConsoleOutputCP(CP_UTF8);
-	SetConsoleCP(CP_UTF8);
+	//SetConsoleOutputCP(CP_UTF8);
+	//SetConsoleCP(CP_UTF8);
 
 	// Enable ANSI color codes under Windows
 	HANDLE handleOut = GetStdHandle(STD_OUTPUT_HANDLE);
